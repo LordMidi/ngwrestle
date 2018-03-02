@@ -1,0 +1,17 @@
+html, 
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 2%;
+  white-space: nowrap;
+  background-color: #000000;
+  background-image: url(assets/images/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  background-attachment: fixed;
+}

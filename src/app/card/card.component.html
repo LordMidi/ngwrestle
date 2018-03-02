@@ -1,0 +1,28 @@
+<div
+  class="container"
+  (click)="toggleActive()"
+  [ngClass]="{
+    active: isActive
+  }"
+>
+  <div
+    class="card"
+    [ngStyle]="{
+      'background-image': 'url(../../assets/images/cards/' + card.image + ')'
+    }"
+  >
+    <div class="text">
+      <header class="shadow">{{card.title}}</header>
+      <div class="infos">
+        <strong>{{card.title}}</strong>
+        <ul ng-if="properties">
+          <li *ngFor="let property of properties; let index = index">
+            <span>{{propertiesKeys[index]}}:</span>{{property}}
+          </li>
+        </ul>
+        <p [innerHTML]="card.text"></p>
+        <strong>{{card.title}}</strong>
+      </div>
+    </div>
+  </div>
+</div>
