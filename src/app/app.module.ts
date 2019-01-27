@@ -15,6 +15,9 @@ import { WrestlerService } from './wrestler/wrestler.service';
     BrowserModule,
     HttpClientModule
   ],
+  exports: [
+    CardComponent    
+  ],
   providers: [
         WrestlerService
   ],

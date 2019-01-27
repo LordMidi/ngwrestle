@@ -7,7 +7,7 @@ import { Card } from './card';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  @Input() card: Card;
+  @Input() public card: Card;
   properties: string[];
   propertiesKeys: string[];
   public isActive: boolean = false;
